@@ -186,6 +186,7 @@ jobs:
         # которые нужно выполнить на сервере, 
         # с которым установлено соединение
         script: |
+          git clone git@github.com:MaksimChislavskiy/taski-docker.git
           cd taski
           # Выполняет pull образов с Docker Hub
           sudo docker compose -f docker-compose.production.yml pull
